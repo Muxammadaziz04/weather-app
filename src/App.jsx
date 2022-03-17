@@ -64,7 +64,7 @@ function App() {
   }
 
 
-  useEffect(async () => {
+  useEffect(() => {
     getBgImage()
     getWeatherdata()
   }, []);
