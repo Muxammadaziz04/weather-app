@@ -67,7 +67,7 @@ function App() {
   useEffect(() => {
     getBgImage()
     getWeatherdata()
-  }, []);
+  }, [ ]);
 
 
 
