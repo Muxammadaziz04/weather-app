@@ -67,7 +67,7 @@ function App() {
   useEffect(() => {
     getBgImage()
     getWeatherdata()
-  }, [ ]);
+  }, []);
 
 
 
@@ -103,7 +103,7 @@ function App() {
          }} className='panel__search__btn'><img src={search} alt="seach" /></button>
        </div>
 
-       <ul className="panel__ul">
+       <div className="panel__ul">
          <h2 className='panel__ul__title'>Last Location</h2>
          {
            lastCountry.map((item, index) => {
@@ -118,7 +118,7 @@ function App() {
              }} className='panel__ul__item'>{item}</button>
            })
          }
-       </ul>
+       </div>
 
        <ul className="panel__ul">
          <h2 className='panel__ul__title'>Weather detalist</h2>
